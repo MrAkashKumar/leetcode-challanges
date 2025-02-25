@@ -5,7 +5,12 @@ package com.akash.leetcode;
 public class TwoSum {
 
     public static void main(String[] args) {
-        System.out.println("hello world");
+        twoSum();
     }
+        
+    private static void twoSum() {
+        
+    }
+
 
 }
