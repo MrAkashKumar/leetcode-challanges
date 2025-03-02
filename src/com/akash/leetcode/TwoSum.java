@@ -11,9 +11,12 @@ public class TwoSum {
 
         public static void main(String[] args) {
             int arr[] = {3,2,4}; 
+            int arr1[] = {2,7,11,15};
             int target = 5;
-            int[] response = twoSum(arr, target);
-            System.out.println(Arrays.toString(response));
+            twoSumAnother(arr1, 9);
+            //int[] response = twoSum(arr, target);
+            
+            //System.out.println(Arrays.toString(response));
         }
         
         public static int[] twoSum(int[] nums, int target) {
@@ -32,5 +35,24 @@ public class TwoSum {
                 map.put(nums[i], i);
             }
             return new int[0];
+        }
+
+        public static void twoSumAnother(int[] arr, int target){
+
+            if(arr.length==0) {
+                return;
+            }
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    
+                    if(arr[i]+ arr[j] == target){
+                        System.out.println(arr[i] + " array value " + arr[j]);
+                        System.out.println(i + " index " + j);
+                        return;
+                    }
+                }
+            }
+            
         }
 }
