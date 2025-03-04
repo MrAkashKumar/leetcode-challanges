@@ -1,4 +1,4 @@
-package com.akash.leetcode;
+package com.akash.interviews;
 /*
  * https://leetcode.com/problems/design-circular-queue/
  */

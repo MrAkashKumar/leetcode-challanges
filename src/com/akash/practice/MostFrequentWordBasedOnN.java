@@ -1,4 +1,4 @@
-package com.akash;
+package com.akash.practice;
 
 import java.util.Arrays;
 import java.util.Map;
