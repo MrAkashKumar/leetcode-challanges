@@ -1,6 +1,5 @@
 package com.akash.leetcode;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,6 +16,7 @@ public class TwoSum {
             //int[] response = twoSum(arr, target);
             
             //System.out.println(Arrays.toString(response));
+            twoSum(arr, target);
         }
         
         public static int[] twoSum(int[] nums, int target) {
