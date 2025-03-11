@@ -1,5 +1,8 @@
 package com.akash.leetcode;
-
+/*
+ * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+ * Type - Array
+ */
 public class MaxProfitBestTimeToBuyAndSellStock {
 
     public static void main(String[] args) {
