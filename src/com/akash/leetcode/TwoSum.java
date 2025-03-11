@@ -5,6 +5,7 @@ import java.util.Map;
 
 /*
  * https://leetcode.com/problems/two-sum/description/
+ * Array
  */
 public class TwoSum {
 

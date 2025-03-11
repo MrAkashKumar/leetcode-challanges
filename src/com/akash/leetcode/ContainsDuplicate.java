@@ -7,6 +7,7 @@ import java.util.Set;
 /*
  * https://leetcode.com/problems/contains-duplicate/description/
  * https://leetcode.com/problems/contains-duplicate/solutions/3672475/4-method-s-c-java-python-beginner-friendly/
+ * Type - Array
  * 
  */
 public class ContainsDuplicate {

@@ -1,8 +1,10 @@
 package com.akash.leetcode;
 /*
  * https://leetcode.com/problems/powx-n/description/
+ * 
  * https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/description/
  * write a program for convert decimal to binary and binary to decimal in java
+ * Type Arrays
  * 
  */
 public class powXn {

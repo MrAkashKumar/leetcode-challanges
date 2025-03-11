@@ -5,6 +5,7 @@ import java.util.Arrays;
 /*
  * https://leetcode.com/problems/product-of-array-except-self/description/
  * https://leetcode.com/problems/product-of-array-except-self/solutions/1342916/3-minute-read-mimicking-an-interview/
+ * Arrays
  */
 public class ProductOfArrayExceptSelf {
 
