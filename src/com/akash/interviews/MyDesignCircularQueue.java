@@ -4,14 +4,12 @@ package com.akash.interviews;
  */
 public class MyDesignCircularQueue {
 
-    private int front;
     private int rear;
     private int capacity;
     private int size;
 
     public MyDesignCircularQueue(int k) {
         this.capacity = 0;
-        front = -1;
         rear = -1;
         size = 0;
     }
