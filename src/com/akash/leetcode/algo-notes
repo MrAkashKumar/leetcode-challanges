@@ -1,0 +1,10 @@
+
+@ -why I have used -> Integer.MIN_VALUE 
+      - This is a constant in Java that represents the smallest possible integer value in the int data type.
+      - starting with Integer.MIN_VALUE ensures that:
+           - Any valid product calculated will be greater than this initial value.
+           - Even if all numbers in the array are negative or zero, the logic won't break.
+           - Alternative approach - instead of you could initialize with 0 but this might fail if all element are negative
+           - It’s commonly used in problems involving maximum values, negative values, or boundary conditions.
+
+@ - why I have used -> Integer.MAX_VALUE:
