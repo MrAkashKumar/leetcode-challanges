@@ -8,3 +8,12 @@
            - It’s commonly used in problems involving maximum values, negative values, or boundary conditions.
 
 @ - why I have used -> Integer.MAX_VALUE:
+      - this condition use for Boundary Checking
+      - when we are finding minimum value then you can use this condition
+      - prevents exceeding Java’s integer limit.
+      - 
+
+
+
+@- why we are using for Arrays.fill(distance, Integer.MAX_VALUE);
+      - In algorithms like Dijkstra's shortest path, Floyd-Warshall, or Dynamic Programming, 
