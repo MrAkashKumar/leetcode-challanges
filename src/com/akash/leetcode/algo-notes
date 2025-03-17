@@ -17,3 +17,28 @@
 
 @- why we are using for Arrays.fill(distance, Integer.MAX_VALUE);
       - In algorithms like Dijkstra's shortest path, Floyd-Warshall, or Dynamic Programming, 
+
+@- Binary search (logic)
+      - If a middle number is greater than a target number, we move right to middle - 1. 
+      - On the other hand if the middle number is less than the target number, we will move left to middle + 1.
+
+https://www.youtube.com/watch?v=DjYZk8nrXVY&ab_channel=AshishPratapSingh
+
+please find the some pattern and when to use 
+1. Prefix sum pattern
+2. Two pointers pattern - reduce time complexity - o(n2) -> 0(n)
+3. Sliding window pattern -
+4. Fast and slow pointers - reduce
+5. Linked List in-place Reversal pattern 
+6. Monotonic stack pattern
+7. Top K elements pattern (min heap & max heap) - Quickselect Algo
+8. Overlapping Intervals patterns (Intervals or ranges problems)
+9. Modified binary search
+10. binary tree traversal 
+11. Depth -first search (DFS)
+12. Breadth-First Search (BFS)
+13. Matrix Traversal
+14. Backtracking
+15. Dynamic Programming Patterns
+
+more info - https://blog.algomaster.io/p/15-leetcode-patterns
