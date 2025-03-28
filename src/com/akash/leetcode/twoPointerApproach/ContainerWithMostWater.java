@@ -18,15 +18,24 @@ public class ContainerWithMostWater {
      * time complexitity - o(n)
      * space complexity - o(1)
      * / depending on minimum height we will move points - we will chose minimum height
+     * 
+     * Reference - 
+     * https://www.youtube.com/watch?v=ZHQg07n_tbg&ab_channel=Codebix
+     * https://youtu.be/QzZ7nmouLTI
      */
     private static int maxAreaWater(int[] height){
         int left = 0; int right = height.length-1;
         int maxWaterArea = 0;
         while (left <= right) {
-            /*find the maximum area of water in container */
+            /*
+             *  find the maximum area of water in container 
+             */
             int area = Math.min(height[left], height[right]) * (right -left);
             Math.max(maxWaterArea, area);
-
+            /*
+             * i will take minimum pwith the help between two left and right 
+             * which one minimum then will move our pointer left or right 
+             */
             if(height[left] < height[right]){
                 left++;
             }else{
