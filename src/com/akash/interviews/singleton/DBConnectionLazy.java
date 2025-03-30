@@ -11,4 +11,14 @@ public class DBConnectionLazy {
         
     }
 
+    /*
+        when it is required then create object of DBConnectionLazy
+    */
+    public static DBConnectionLazy getInstance(){
+        if(dbConnection == null){
+            dbConnection = new DBConnectionLazy();
+        }
+        return dbConnection;
+    } 
+
 }
