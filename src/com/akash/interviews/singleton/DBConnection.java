@@ -22,11 +22,6 @@ public class DBConnection {
         return connection;
     }
 
-                    /* Lazy Initialization Approach */
-    
-    
-    private static DBConnection dbConnection;
-
 }
 
 
