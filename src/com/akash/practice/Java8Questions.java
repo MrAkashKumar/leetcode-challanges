@@ -4,12 +4,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class Java8Questions {
 
-    
     
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(9,12,3,11,13,19,6,8,2,16);
