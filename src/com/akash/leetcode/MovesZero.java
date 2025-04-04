@@ -1,4 +1,4 @@
-package com.akash.leetcode.twoPointerApproach;
+package com.akash.leetcode;
 
 import java.util.Arrays;
 

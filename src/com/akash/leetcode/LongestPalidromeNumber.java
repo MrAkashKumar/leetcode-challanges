@@ -1,4 +1,4 @@
-package com.akash.leetcode.twoPointerApproach;
+package com.akash.leetcode;
 /*
  * https://leetcode.com/problems/longest-palindromic-substring/description/?envType=problem-list-v2&envId=two-pointers 
  */

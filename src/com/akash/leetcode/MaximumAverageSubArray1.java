@@ -1,9 +1,7 @@
-package com.akash.leetcode.slidingWindowApproach;
+package com.akash.leetcode;
 
 public class MaximumAverageSubArray1 {
 
-
-    
     public static void main(String[] args) {
         int arr[] = {1, 12, -5, -6, 50, 3}; int k = 4;
         double maxAverageSubArrInDouble = maximumAverageSubArrayWithBruteForceApproach(arr, k);
@@ -13,7 +11,7 @@ public class MaximumAverageSubArray1 {
     }
 
     /*
-     * bruteForce 
+     * brute Force 
      * 
      */
     private static double maximumAverageSubArrayWithBruteForceApproach(int[] arr, int k){

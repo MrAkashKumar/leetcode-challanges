@@ -1,4 +1,4 @@
-package com.akash.leetcode.twoPointerApproach;
+package com.akash.leetcode;
 /*
  * https://leetcode.com/problems/container-with-most-water/description/
  * Topics - Array, Two-pointer
