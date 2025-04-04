@@ -15,12 +15,12 @@ public class MaximumSubArray {
 
     private static int findMaximumSubArray(int[] nums){
             int maxSum = nums[0];
-            int curSum =0;
+            int currentSum =0;
             for(int x : nums){
-                curSum += x;
-                maxSum = Math.max(curSum, maxSum);
-                if(curSum<0){
-                    curSum = 0;
+                currentSum = currentSum + x;
+                maxSum = Math.max(currentSum, maxSum);
+                if(currentSum<0){
+                    currentSum = 0;
                 }
             }
             return maxSum;
