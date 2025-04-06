@@ -1,0 +1,26 @@
+    
+public static void solution1(){
+    byte x = 127;
+        x++;
+        x++;
+    System.out.print(x);
+}
+
+public static void solution2(){
+    int[] x = {120, 200, 016};
+    for (int i = 0; i < x.length; i++) {
+        System.out.print(x[i] + " ");
+
+    }
+}
+
+
+public static void main(String[] args) {
+    solution1();
+    solution2();
+}
+
+What will be output for this question 
+hint: Octal integer
+
+so What is the concept of octal integer?

@@ -1,0 +1,19 @@
+class Person {
+    private final String name;
+
+    Person(String name) {
+        this.name = name;
+    }
+
+    public boolean equals(Object o) {
+            return o instanceof Person && ((Person) o).name.equals(this.name);
+    }
+}
+
+
+    Which of the following is true if used as key in a HashMap?
+
+    A. Retrieval will work fine
+    B. Retrieval will always fail
+    C. Retrieval depends on name.hashCode()
+    D. May work sometimes, but violates hashCode-equals contract

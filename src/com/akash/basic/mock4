@@ -1,0 +1,25 @@
+class TestKey {
+    int id;
+    TestKey(int id) { this.id = id; }
+
+    public boolean equals(Object o) {
+        return true;
+    }
+
+    public int hashCode() {
+        return id % 5;
+    }
+}
+
+
+ Which of the following keys will be considered equal by a HashMap?
+TestKey k1 = new TestKey(10);
+TestKey k2 = new TestKey(15);
+TestKey k3 = new TestKey(25);
+
+A. All keys are equal // A
+B. Only k1 and k2
+C. Only k2 and k3
+D. All keys go to same bucket, but none are equal 
+
+
