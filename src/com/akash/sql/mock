@@ -1,0 +1,50 @@
+SQL - 
+
+- find the highest salary from employee table
+
+select * from employee order by desc sal limit 1;
+
+- Retrieve distinct records
+
+select distinct sal from employee;
+
+- Given a table Employee, write an SQL query to find the names of employees who earn more than a specific salary 1000.
+
+select * from employee where salary > 100;
+
+- Given two tables Customers and Orders, write an SQL query to find all customers who never placed an order.
+
+- Given a table Employee, write an SQL query to find the second-highest salary.
+
+- Given two tables Employee and Department, write an SQL query to find the department with the highest average salary.
+
+- Given a table Person, write an SQL query to find all duplicate emails.
+
+- Given a table Employee, write an SQL query to rank the salaries of all employees.
+
+- Given a table Employee, write an SQL query to find the employees who earn more than their managers.
+
+- Given a table Employee, write an SQL query to find the median salary.
+
+- Write a query to retrieve all records from a table where the date is '2024-01-01'.
+
+- Retrieve all records from a table where the date is between '2024-01-01' and '2024-01-31'.
+
+- Write a query to get the current date.
+
+- Write a query to get the current timestamp.
+
+- Extract the year, month, and day from a date column.
+
+- Write a query to find the first day of the month for a given date.
+
+- Write a query to find the last day of the month for a given date.
+
+- Calculate the difference in days between two dates.
+
+- Retrieve all records from a table where the date falls within the first quarter of 2024.
+
+- Calculate the moving average of a metric over a rolling window of time (e.g., the past 30 days).
+
+- 
+
