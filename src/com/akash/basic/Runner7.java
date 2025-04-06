@@ -10,7 +10,6 @@ public class Runner7{
     static class Student {
     
     private int id;
-    private String name;
 
     public Student(){
 
@@ -18,7 +17,6 @@ public class Runner7{
 
     public Student(int id, String name) {
         this.id = id;
-        this.name = name;
     }
 
     @Override
