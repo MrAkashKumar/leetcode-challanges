@@ -1,0 +1,23 @@
+class Employee {
+    String name;
+    Employee(String name) {
+        this.name = name;
+    }
+
+    public int hashCode() {
+        return 42;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Map<Employee, String> map = new HashMap<>();
+        Employee e1 = new Employee("Amit");
+        Employee e2 = new Employee("Amit");
+
+        map.put(e1, "Developer");
+        map.put(e2, "Manager"); // store 
+
+        System.out.println(map.get(e1)); // manager
+    }
+}

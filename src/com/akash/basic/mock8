@@ -1,0 +1,7 @@
+public static void solution(){
+        byte x = 127;
+            x++;
+            x++;
+            System.out.print(x); // 128
+
+}

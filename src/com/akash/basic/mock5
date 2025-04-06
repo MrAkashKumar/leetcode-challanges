@@ -1,0 +1,23 @@
+class MyKey {
+    int val;
+    MyKey(int val) { this.val = val; }
+
+    public int hashCode() {
+        
+        return val % 3;
+    }
+
+    public boolean equals(Object obj) {
+        return this.val == ((MyKey)obj).val;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Map<MyKey, String> map = new HashMap<>();
+        for (int i = 0; i < 6; i++) {
+            map.put(new MyKey(i), "val" + i);
+        }
+        System.out.println(map.size()); //4
+    }
+}
