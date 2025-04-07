@@ -1,0 +1,31 @@
+public class OverloadingExample {
+    public void print(int value) {
+        System.out.println("Primitive int method called with value: " + value);
+    }
+
+    public void print(Integer value) {
+        System.out.println("Integer object method called with value: " + value);
+    }
+
+    public void print(object value){
+        System.out.println("object method called with value: " + value);
+    }
+
+    public static void main(String[] args) {
+        OverloadingExample example = new OverloadingExample();
+        
+        // Calling with primitive int
+        example.print(10); // Output: Primitive int method called with value: 10
+        
+        // Calling with Integer object
+        example.print(Integer.valueOf(20)); // Output: Integer object method called with value: 20
+        
+        // Calling with autoboxed int
+        example.print(30); // Output: Primitive int method called with value: 30
+        
+        // Calling with autoboxed Integer
+        example.print(new Integer(40)); // Output: Integer object method called with value: 40
+
+        example.print(210);
+    }
+}
