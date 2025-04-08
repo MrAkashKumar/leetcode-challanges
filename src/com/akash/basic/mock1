@@ -1,41 +1,38 @@
-class Point {
-    int x, y;
+class A{
+ 
+}
+ 
+class B extends A{
+ 
+}
+ 
+class C extends B{
+ 
+}
+ 
+public class MainClass{
 
-    Point(int x, int y) {
-         this.x = x; 
-         this.y = y; 
+    static void overloadedMethod(A a)
+    {
+        System.out.println("ONE");
     }
-
-    public boolean equals(Object o) {
-        if (this == o) 
-        return true;
-        if (o instanceof Point) {
-            Point p = (Point) o;
-            return this.x == p.x && this.y == p.y;
-        }
-        return false;
+ 
+    static void overloadedMethod(B b)
+    {
+        System.out.println("TWO");
     }
-
-    public int hashCode() {
-        return 1;
+ 
+    static void overloadedMethod(Object obj)
+    {
+        System.out.println("THREE");
+    }
+ 
+    public static void main(String[] args){
+        C c = new C();
+ 
+        overloadedMethod(c);
     }
 }
-
-public class Main {
-    public static void main(String[] args) {
-        Map<Point, String> map = new HashMap<>();
-        map.put(new Point(1, 2), "A");
-        map.put(new Point(1, 2), "B");
-        System.out.println(map.size()); // 1
-    }
-}
-
--------------------
-
-
-
-
-
 
 
 

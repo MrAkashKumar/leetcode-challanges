@@ -1,9 +1,9 @@
-package com.akash.basic;
+package com.akash.basic.hashMap;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.akash.basic.Runner1.MockApp;
+import com.akash.basic.hashMap.Runner1.MockApp;
 
 public class Runner4{
 

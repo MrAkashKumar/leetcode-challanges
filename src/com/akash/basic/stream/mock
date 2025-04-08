@@ -1,0 +1,21 @@
+Problem:
+
+Given a list of Employee objects, 
+group them by department, and within each department, sort employees by salary descending.
+
+class Employee {
+    String name;
+    String department;
+    double salary;
+    // constructor, getters
+}
+Question:
+Write a stream-based solution to get:
+
+
+
+Map<String, List<Employee>> where key = department, value = list sorted by salary (desc).
+
+
+Mech - list of employee
+CSE - list of 

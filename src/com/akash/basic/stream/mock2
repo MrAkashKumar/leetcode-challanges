@@ -1,0 +1,4 @@
+Problem:
+Given a list of Product(name, price), 
+collect into a TreeMap<String, Double> 
+summing prices of same-name products.
