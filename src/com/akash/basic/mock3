@@ -1,21 +1,25 @@
-class MyKey {
-    int value;
-    MyKey(int value) { this.value = value; }
-
-    public boolean equals(Object o) {
-        return true;
+class X{
+    void method(int a){
+        System.out.println("ONE");
     }
-
-    public int hashCode() {
-        return 0;
+ 
+    void method(double d){
+        System.out.println("TWO");
+    }
+}
+ 
+class Y extends X{
+    @Override
+    void method(double d)
+    {
+        System.out.println("THREE");
     }
 }
 
+
 public class Main {
-    public static void main(String[] args) {
-        Map<MyKey, String> map = new HashMap<>();
-        map.put(new MyKey(1), "One");
-        map.put(new MyKey(2), "Two");
-        System.out.println(map.size()); // 2
+  public static void main(String[] args)
+    {
+        new Y().method(100);
     }
 }

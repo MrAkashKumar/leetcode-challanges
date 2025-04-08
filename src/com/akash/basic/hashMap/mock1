@@ -1,0 +1,44 @@
+class Point {
+    int x, y;
+
+    Point(int x, int y) {
+         this.x = x; 
+         this.y = y; 
+    }
+
+    public boolean equals(Object o) {
+        if (this == o) 
+        return true;
+        if (o instanceof Point) {
+            Point p = (Point) o;
+            return this.x == p.x && this.y == p.y;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return 1;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Map<Point, String> map = new HashMap<>();
+        map.put(new Point(1, 2), "A");
+        map.put(new Point(1, 2), "B");
+        System.out.println(map.size()); // 1
+    }
+}
+
+-------------------
+
+
+
+
+
+
+
+
+
+
+

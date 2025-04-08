@@ -1,37 +1,36 @@
 package com.akash.basic;
+/*
+ *  
+ */
+public class Runner2 {
 
-import java.util.HashMap;
-import java.util.Map;
+    public static void print(int value) {
+        System.out.println("Primitive int method called with value: " + value);
+    }
 
-import com.akash.basic.Runner1.MockApp;
+    public static void print(Integer value) {
+        System.out.println("Integer object method called with value: " + value);
+    }
 
-public class Runner2{
-
-    static class Employee {
-        String name;
-        Employee(String name) {
-            this.name = name;
-        }
-    
-        public int hashCode() {
-            System.out.println("Hascode");
-            return 42;
-        }
+    public static void print(Object value){
+        System.out.println("object method called with value: " + value);
     }
 
     public static void main(String[] args) {
-        Map<Employee, String> map = new HashMap<>();
-        Employee e1 = new Employee("Amit");
-        Employee e2 = new Employee("Amit");
+        
+        /* Calling with primitive int */ 
+        print(10); /* Output: Primitive int method called with value: 10 */ 
+        
+        /* Calling with Integer object */ 
+        print(Integer.valueOf(20)); /* Output: Integer object method called with value: 20 */ 
+        
+        /* Calling with autoboxed int */ 
+        print(30); /* Output: Primitive int method called with value: 30 */ 
+        
+        /* Calling with autoboxed Integer */ 
+        print(Integer.valueOf(40)); /* Output: Integer object method called with value: 40 */ 
 
-        map.put(e1, "Developer");
-        map.put(e2, "Manager"); // store 
-
-        System.out.println(map.get(e1)); //Developer
-        System.out.println(map.get(e2)); // manager
-        System.out.println(map.size());
+        print(210);
     }
     
 }
-
-
