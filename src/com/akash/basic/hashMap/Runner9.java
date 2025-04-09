@@ -22,7 +22,8 @@ public class Runner9 {
         }
     
         public boolean equals(Object o) {
-                return o instanceof Person && ((Person) o).name.equals(this.name);
+            System.out.println(" equal method ");
+            return o instanceof Person && ((Person) o).name.equals(this.name);
         }
     }
 

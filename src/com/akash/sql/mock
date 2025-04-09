@@ -1,6 +1,8 @@
 SQL - 
 
 - find the highest salary from employee table
+- MAX() Function: This function is used to retrieve the maximum value from a specified column. 
+- In this case, it's used to find the highest salary.
 
 select * from employee order by desc sal limit 1;
 

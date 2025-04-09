@@ -12,7 +12,7 @@ public class Runner6 {
             map.put(new KeyApp(2), "B");
             map.put(new KeyApp(3), "C");
 
-            System.out.println(map.size()); /* */
+            System.out.println(map.size()); /* 3 */
 
     }
     

@@ -12,10 +12,12 @@ public class Runner4{
         TestKey(int id) { this.id = id; }
     
         public boolean equals(Object o) {
+            System.out.println("equals method");
             return true;
         }
     
         public int hashCode() {
+            System.out.println("has code method");
             return id % 5;
         }
     }
@@ -31,6 +33,10 @@ public class Runner4{
         map.put(k2, "CDF");
         
         System.out.println(map.size());
+        
+        System.out.println(map.get(k1)); // CDF
+        System.out.println(map.get(k2)); // some valuee
+        System.out.println(map.get(k3)); // CDF
     }
     
 }
