@@ -21,11 +21,13 @@ public class Runner7{
 
     @Override
     public int hashCode() {
+        System.out.println("hascode method");
         return id; // Simple implementation for demonstration
     }
 
     @Override
     public boolean equals(Object obj) {
+        System.out.println("equal method");
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
         Student student = (Student) obj;
@@ -44,7 +46,8 @@ public class Runner7{
         Student student2 = new Student(1, "Jane");
         String value = studentMap.get(student2);
         
-        System.out.println(value); 
+        System.out.println(value); // student1
+        System.out.println(studentMap.size()); // 1
        
     }
     

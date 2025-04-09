@@ -2,3 +2,11 @@ Problem:
 Given a list of Product(name, price), 
 collect into a TreeMap<String, Double> 
 summing prices of same-name products.
+
+
+
+/*
+
+https://medium.com/@bhangalekunal2631996/java-stream-api-coding-interview-questions-and-answers-2a212505e1c6
+
+*/

@@ -12,10 +12,12 @@ public class Runner3{
         MyKey(int value) { this.value = value; }
     
         public boolean equals(Object o) {
+            System.out.println("Equal method");
             return true;
         }
     
         public int hashCode() {
+            System.out.println("hasCode method");
             return 0;
         }
     }

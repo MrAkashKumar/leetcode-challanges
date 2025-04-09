@@ -12,6 +12,9 @@ public class Runner8 {
         map.put(new Emp(10), "X");
         map.put(new Emp(20), "Y");
         map.put(new Emp(10), "Z");
+        System.out.println(map.size());
+        System.out.println(map.get(new Emp(10))); //Z
+        System.out.println(map.get(new Emp(20)));
     }
 
     static class Emp {
