@@ -3,7 +3,7 @@ package com.akash.leetcode;
  * https://leetcode.com/problems/maximum-product-subarray/description/
  * Type - Array
  */
-public class MaximumProductSubArray {
+public class MaximumProductSubArray152 {
 
     public static void main(String[] args) {
         int arr[] = {2,3,-2,4};

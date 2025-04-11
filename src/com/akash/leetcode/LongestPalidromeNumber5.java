@@ -2,7 +2,7 @@ package com.akash.leetcode;
 /*
  * https://leetcode.com/problems/longest-palindromic-substring/description/?envType=problem-list-v2&envId=two-pointers 
  */
-public class LongestPalidromeNumber {
+public class LongestPalidromeNumber5 {
     
     public static void main(String[] args) {
         String str = "babad";

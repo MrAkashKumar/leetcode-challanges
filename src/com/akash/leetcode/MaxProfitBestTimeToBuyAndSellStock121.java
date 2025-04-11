@@ -3,7 +3,7 @@ package com.akash.leetcode;
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
  * Type - Array
  */
-public class MaxProfitBestTimeToBuyAndSellStock {
+public class MaxProfitBestTimeToBuyAndSellStock121 {
 
     public static void main(String[] args) {
         int[] prices = {7,1, 5, 3, 6, 4};

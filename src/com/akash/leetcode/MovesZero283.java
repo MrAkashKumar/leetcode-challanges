@@ -6,7 +6,7 @@ import java.util.Arrays;
  * https://leetcode.com/problems/move-zeroes/description/
  * 
  */
-public class MovesZero {
+public class MovesZero283 {
 
     public static void main(String[] args) {
         int[] arr = {0,1,0,3,12};

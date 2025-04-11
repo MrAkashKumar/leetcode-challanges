@@ -1,6 +1,10 @@
 package com.akash.leetcode;
-
-public class MaximumAverageSubArray1 {
+/*
+ * Given an integer array nums consisting of n elements and an integer k, return the maximum average value of a subarray of length k rounded down to the nearest integer.
+ * A subarray is a contiguous part of an array.
+ * https://leetcode.com/problems/maximum-average-subarray-i/description/
+ */
+public class MaximumAverageSubArray1643 {
 
     public static void main(String[] args) {
         int arr[] = {1, 12, -5, -6, 50, 3}; 

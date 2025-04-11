@@ -12,7 +12,7 @@ import java.util.Set;
  * two pointer technique
  * Array Questions
  */
-public class ThreeSum {
+public class ThreeSum15 {
 
     public static void main(String[] args) {
         int[] nums = {-1,0,1,2,-1,-4};

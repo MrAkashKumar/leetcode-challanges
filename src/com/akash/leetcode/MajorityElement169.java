@@ -3,7 +3,7 @@ package com.akash.leetcode;
 /*
  * https://leetcode.com/problems/majority-element/description/
  */
-public class MajorityElement {
+public class MajorityElement169 {
 
     public static void main(String[] args) {
         int[] nums = {1,2,3,3,3,1};
