@@ -7,7 +7,7 @@ package com.akash.leetcode;
  * Type Arrays
  * 
  */
-public class powXn {
+public class powXn50 {
 
 
     public static void main(String[] args) {

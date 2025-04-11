@@ -2,7 +2,7 @@ package com.akash.leetcode;
 /*
  * https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
  */
-public class FindMinimumRotatedSortedArray {
+public class FindMinimumRotatedSortedArray153 {
 
     public static void main(String[] args) {
         int [] arr = {3,4,5,1,2}; 

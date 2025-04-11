@@ -4,7 +4,7 @@ package com.akash.leetcode;
  * Leetcode - 53
  * Array
  */
-public class MaximumSubArray {
+public class MaximumSubArray53 {
 
     public static void main(String[] args) {
         

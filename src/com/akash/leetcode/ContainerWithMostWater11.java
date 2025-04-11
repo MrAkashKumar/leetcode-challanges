@@ -3,7 +3,7 @@ package com.akash.leetcode;
  * https://leetcode.com/problems/container-with-most-water/description/
  * Topics - Array, Two-pointer
  */
-public class ContainerWithMostWater {
+public class ContainerWithMostWater11 {
 
     public static void main(String[] args) {
         int[] height = {1,1};
