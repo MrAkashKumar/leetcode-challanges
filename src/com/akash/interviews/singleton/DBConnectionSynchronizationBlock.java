@@ -1,29 +1,29 @@
 package com.akash.interviews.singleton;
 
 public class DBConnectionSynchronizationBlock {
-    // Singleton instance
-    // Using double-checked locking for thread-safe singleton instance creation
-    // This ensures that the instance is created only when needed and is thread-safe
-    // without the overhead of synchronization on every access
-    // This is a lazy initialization approach
-    // The instance is declared as volatile to ensure visibility across threads
+    
     private static DBConnectionSynchronizationBlock instance;
 
     private DBConnectionSynchronizationBlock() {
-        // private constructor to prevent instantiation
+        /* private constructor to prevent instantiation */
     }
 
-    public static DBConnectionSynchronizationBlock getInstance() {
+    /* synchronized block to ensure thread safety */
+    /* This method is synchronized to ensure that only one thread can access it at a time */
+    /* This is a locking mechanism to prevent multiple threads from creating multiple instances */
+
+    /* disadvantage of this approach is that it can lead to performance issues (slow)
+     * if multiple threads are trying to access the method at the same time 
+     * */
+    synchronized public static DBConnectionSynchronizationBlock getInstance() {
         if (instance == null) {
-            synchronized (DBConnectionSynchronizationBlock.class) {
-                if (instance == null) {
-                    instance = new DBConnectionSynchronizationBlock();
-                }
-            }
+            instance = new DBConnectionSynchronizationBlock();
         }
         return instance;
     }
-
+    /* This method is synchronized to ensure that only one thread can access it at a time */
+    /* This is a locking mechanism to prevent multiple threads from creating multiple instances */
+    
     public void connect() {
         System.out.println("Connected to the database.");
     }
