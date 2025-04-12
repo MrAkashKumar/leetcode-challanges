@@ -18,21 +18,6 @@ public class MovesZero283 {
      * space complexity = O(1)
      * Time complexity = O(n)
      */
-    /**
-     * This method moves all zeroes in the array to the end while maintaining the
-     * relative order of non-zero elements.
-     * 
-     * @param nums - input array
-     */
-    /*
-     * The algorithm works by maintaining a left pointer that keeps track of the
-     * position where the next non-zero element should be placed. The right pointer
-     * iterates through the array, and whenever it finds a non-zero element, it
-     * swaps it with the element at the left pointer and increments the left pointer.
-     * 
-     * This way, all non-zero elements are moved to the front of the array, and all
-     * zeroes are moved to the end.
-     */
     public static void moveZeroesFromArray(int[] nums){
 
         int left = 0; /* pointer for placing no-zero elements  */

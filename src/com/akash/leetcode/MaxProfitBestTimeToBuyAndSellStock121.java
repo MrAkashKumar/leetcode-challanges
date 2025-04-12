@@ -10,16 +10,8 @@ public class MaxProfitBestTimeToBuyAndSellStock121 {
         int maxValue = maxProfit(prices);
         System.out.println(maxValue);
     }
-    /*
-     * 1. We need to find the maximum profit we can make by buying and selling a stock.
-     * 2. We can only buy and sell once.
-     * 3. We need to find the best time to buy and sell the stock.
-     * 4. We need to find the maximum profit we can make by buying and selling a stock.
-     * 5. We can only buy and sell once.
-     * 6. We need to find the best time to buy and sell the stock.
-     */
-    /* Time and space complexity is O(n) and O(1) */   
-    private static int maxProfit(int[] prices) {
+        
+        private static int maxProfit(int[] prices) {
             
             int lsf = Integer.MAX_VALUE;
             int op = 0; /*  overall profit */ 
@@ -32,9 +24,9 @@ public class MaxProfitBestTimeToBuyAndSellStock121 {
                 pist = prices[i] - lsf;  /* calculating profit if sold today by, Buy - sell */ 
                 if(op < pist){ /* if pist is more then our previous overall profit */
                     op = pist;  /* update overall profit */ 
+                }
             }
-        }
-        return op;
+            return op;
             
-    }
+        }
 }

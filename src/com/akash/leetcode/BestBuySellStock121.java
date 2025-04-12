@@ -10,13 +10,7 @@ public class BestBuySellStock121 {
         System.out.println(response);
         
     }
-    /*
-     * The idea is to keep track of the minimum price seen so far and the maximum profit that can be made.
-     * For each price, we check if it's less than the minimum price seen so far. If it is, we update the minimum price.
-     * If it's greater than the minimum price, we calculate the profit and update the maximum profit if necessary.
-     * 
-     * This approach ensures that we only traverse the array once, making it efficient.
-     */
+
     /*
      * Time complexity - 0(n)
      * space complexity - 0(1)
