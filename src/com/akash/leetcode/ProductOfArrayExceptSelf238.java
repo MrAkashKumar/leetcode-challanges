@@ -17,17 +17,7 @@ public class ProductOfArrayExceptSelf238 {
 
     }
 
-    /* time complexity: O(n)
-     * space complexity: O(1) */
-    /* * The idea is to use two passes to calculate the product of all elements to the left and right of each element.
-     * In the first pass, we calculate the product of all elements to the left of each element and store it in the result array.
-     * In the second pass, we calculate the product of all elements to the right of each element and multiply it with the value in the result array.
-     * This way, we get the product of all elements except for the current element.
-     */
-    /* * The first pass calculates the product of all elements to the left of each element and stores it in the result array.
-     * The second pass calculates the product of all elements to the right of each element and multiplies it with the value in the result array.
-     * This way, we get the product of all elements except for the current element.
-     */ 
+    /*time complexity - 0(n) and Auxilary Space is 0(1)  */
     private static int[] productOfArrayExceptSelf(int[] nums){
 
         int n = nums.length;
