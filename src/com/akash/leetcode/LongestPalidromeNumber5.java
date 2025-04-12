@@ -12,6 +12,8 @@ public class LongestPalidromeNumber5 {
          *  solved by dynamic programming
          *  solved via two pointer also
          */
+        longestPalindromeWithDynamicProgramming(str);
+        System.out.println(longestPalindromeWithDynamicProgramming(str));
 
 
     }
