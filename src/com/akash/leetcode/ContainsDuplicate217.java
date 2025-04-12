@@ -22,7 +22,16 @@ public class ContainsDuplicate217 {
                 System.out.println(setResponse);
             }
 
-            
+            /*
+             * This algorithm uses a HashSet to store the elements of the array.
+             * It iterates through the array and checks if each element is already in the HashSet.
+             * If it is, a duplicate is found and the function returns true.
+             * If no duplicates are found after checking all elements, it returns false.
+             */
+            /*
+             * Time complexity - O(n)
+             * Space complexity - O(n)
+             */
 
             private static boolean containDuplicateCheckViaHashSet(int[] arr){
                 Set<Integer> setValue = new HashSet<>();
@@ -34,7 +43,18 @@ public class ContainsDuplicate217 {
                 }
                 return false;
             }
-
+    
+            /*
+             * This algorithm sorts the array first and then checks for duplicates.
+             * It compares each element with the previous one in the sorted array.
+             * If they are equal, a duplicate is found and the function returns true.
+             * If no duplicates are found after checking all elements, it returns false.
+             */
+            /*  
+             * Time complexity - O(nlogn)
+             * Space complexity - O(1)
+             */
+            
             private static boolean containsDuplicateCheckViaSorting(int[] arr){
                 /* first sort array */
                 Arrays.sort(arr);
@@ -46,7 +66,22 @@ public class ContainsDuplicate217 {
                 }
                 return false;
             }
-        
+            /*
+             * Brute force algorithm
+             * Time complexity - O(n^2)
+             * Space complexity - O(1)
+             */
+            /*
+             * This algorithm checks each element with every other element in the array.
+             * It uses two nested loops to compare each pair of elements.
+             * If a duplicate is found, it returns true.
+             * If no duplicates are found after checking all pairs, it returns false.
+             */
+            /*
+             * Time complexity - O(n^2)
+             * Space complexity - O(1)
+             */
+
             private static boolean containsDuplicateForBruteAlgorithm(int[] arr) {
                 
                 int length = arr.length;
