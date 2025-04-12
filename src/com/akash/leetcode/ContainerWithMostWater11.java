@@ -45,7 +45,7 @@ public class ContainerWithMostWater11 {
         }
         return maxWaterArea;
     }
-
+    
     /*
      * brute approach technique
      * time complexity - o(square of n)
