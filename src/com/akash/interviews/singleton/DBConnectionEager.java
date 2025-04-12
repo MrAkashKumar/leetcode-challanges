@@ -3,22 +3,22 @@ package com.akash.interviews.singleton;
  * Singleton class
  * Eager Initialization
  */
-public class DBConnection {
+public class DBConnectionEager {
 
                         /* Eager Initialization Approach */
     /*
      * static keyword is useful for load object once initialise class
      */
-    private static DBConnection connection = new DBConnection();
+    private static DBConnectionEager connection = new DBConnectionEager();
 
     /*
      * can't create object that's why I have taken private constructor
      */
-    private DBConnection(){
+    private DBConnectionEager(){
 
     }
 
-    public static DBConnection getInstance(){
+    public static DBConnectionEager getInstance(){
         return connection;
     }
 

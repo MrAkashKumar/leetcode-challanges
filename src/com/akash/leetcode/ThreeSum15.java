@@ -20,7 +20,20 @@ public class ThreeSum15 {
         System.out.println(lists);
     }
 
-    
+    /*  Time Complexity: O(n^2)
+        Space Complexity: O(1)
+        1. Sort the array
+        2. Fix one element and use two pointers to find the other two elements
+        3. If the sum of the three elements is equal to zero, add them to the result
+        4. If the sum is less than zero, move the left pointer to the right
+        5. If the sum is greater than zero, move the right pointer to the left
+    */
+    /*   * 1. Sort the array
+        2. Fix one element and use two pointers to find the other two elements
+        3. If the sum of the three elements is equal to zero, add them to the result
+        4. If the sum is less than zero, move the left pointer to the right
+        5. If the sum is greater than zero, move the right pointer to the left
+    */
     private static List<List<Integer>> threeSum(int[] nums){
         int target = 0;
         Arrays.sort(nums);

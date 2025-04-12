@@ -14,10 +14,19 @@ public class MaximumAverageSubArray1643 {
         double maximumAverageSubArray = maximumAverageSubArrayWithSlidingWindow(arr, k);
         System.out.println(maximumAverageSubArray);
     }
-
     /*
-     * brute Force 
+     * Given an integer array nums consisting of n elements and an integer k, return the maximum average value of a subarray of length k rounded down to the nearest integer.
+     * A subarray is a contiguous part of an array.
+     * https://leetcode.com/problems/maximum-average-subarray-i/description/
+     */
+
+    /* brute force approach
+     * 1. Find the sum of all subarrays of length k.
+     * 2. Find the maximum sum of all subarrays of length k.
+     * 3. Return the maximum sum divided by k.
      * 
+     * Time complexity: O(n^2)
+     * Space complexity: O(1)
      */
     private static double maximumAverageSubArrayWithBruteForceApproach(int[] arr, int k){
 
@@ -40,7 +49,15 @@ public class MaximumAverageSubArray1643 {
         return (double) maxSum/k;
     }
 
-
+    /* Sliding window approach
+     * 1. Find the sum of first k elements.
+     * 2. Iterate through the array and find the sum of next k elements by subtracting the first element of the previous window and adding the last element of the current window.
+     * 3. Find the maximum sum of all subarrays of length k.
+     * 4. Return the maximum sum divided by k.
+     * 
+     * Time complexity: O(n)
+     * Space complexity: O(1)
+     */
     private static double maximumAverageSubArrayWithSlidingWindow(int arr[], int k){
         
 
