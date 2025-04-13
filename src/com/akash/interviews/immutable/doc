@@ -1,0 +1,13 @@
+
+/* where we can use immutable class some example
+
+1. Thread-safe: Immutable objects are inherently thread-safe, meaning they can be shared between multiple threads without the need for synchronization. This makes them ideal for concurrent programming scenarios where multiple threads may access the same object simultaneously.
+2. Caching: Immutable objects can be cached and reused without the risk of unintended modifications. This can improve performance by reducing the need to create new objects.
+3. Functional programming: Immutable objects are a key concept in functional programming, where functions are expected to have no side effects. By using immutable objects, you can ensure that your functions do not modify the state of the objects they operate on.
+4. Data transfer objects: Immutable objects are often used as data transfer objects (DTOs) in APIs and web services. By using immutable objects, you can ensure that the data being transferred is not modified during transmission.
+5. Value objects: Immutable objects are often used to represent value objects, which are objects that are defined by their values rather than their identity. This can simplify code and make it easier to reason about the behavior of your program.
+6. Configuration objects: Immutable objects can be used to represent configuration settings that should not change during the lifetime of an application. This can help ensure that configuration settings are consistent and predictable.
+7. Event sourcing: Immutable objects can be used to represent events in event sourcing architectures, where the state of an application is derived from a sequence of events rather than a mutable object.
+8. Functional programming: Immutable objects are often used in functional programming paradigms, where functions are expected to have no side effects. By using immutable objects, you can ensure that your functions do not modify the state of the objects they operate on.
+9. Data structures: Immutable objects can be used to implement data structures such as lists, sets, and maps that are designed to be immutable. This can simplify code and make it easier to reason about the behavior of your program.
+10. Serialization: Immutable objects can be easily serialized and deserialized, making them ideal for use in distributed systems where objects need to be transmitted over a network.
