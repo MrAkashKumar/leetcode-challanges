@@ -3,6 +3,8 @@ package com.akash.leetcode;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /*
  * https://leetcode.com/problems/contains-duplicate/description/
@@ -20,6 +22,13 @@ public class ContainsDuplicate217 {
                 System.out.println(sortResponse);
                 boolean setResponse = containDuplicateCheckViaHashSet(arr);
                 System.out.println(setResponse);
+                boolean isResponse = containsDuplicateUsingStream(arr);
+                boolean isStreamResponse = containsDuplicateUsingStreamWithSet(arr);
+                boolean isSetCountresponse = containsDuplicateUsingStreamWithSetAndCount(arr);
+                System.out.println(isResponse);
+                System.out.println(isStreamResponse);
+                System.out.println(isSetCountresponse);
+                
             }
 
             /*
@@ -97,4 +106,14 @@ public class ContainsDuplicate217 {
                 return false;
             }
 
+            private static boolean containsDuplicateUsingStream(int[] arr) {
+                return Arrays.stream(arr).distinct().count() != arr.length;
+            }
+            private static boolean containsDuplicateUsingStreamWithSet(int[] arr) {
+                return Arrays.stream(arr).boxed().collect(Collectors.toSet()).size() != arr.length;
+            }
+            private static boolean containsDuplicateUsingStreamWithSetAndCount(int[] arr) {
+                return Arrays.stream(arr).boxed().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+                        .values().stream().anyMatch(count -> count > 1);
+            }
 }

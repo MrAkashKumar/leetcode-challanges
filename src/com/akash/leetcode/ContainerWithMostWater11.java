@@ -36,6 +36,15 @@ public class ContainerWithMostWater11 {
              * i will take minimum pwith the help between two left and right 
              * which one minimum then will move our pointer left or right 
              */
+            /*
+             * if left height is less than right height then we will move right pointer
+             * because if we move left pointer then we will not get any area 
+             * because height is less than left height
+             */
+            /* if right height is less than left height then we will move left pointer
+             * because if we move right pointer then we will not get any area 
+             * because height is less than right height
+             */
             if(height[left] < height[right]){
                 left++;
             }else{
