@@ -51,13 +51,23 @@ public class ValidAnagram242 {
 
         for (char ch : str1.toCharArray()) {
             if(map.containsKey(ch)){
-                
+                map.put(ch, map.get(ch)+1);
+            }else{
+                map.put(ch, 1);
             }
-
-            
+            /*map.put(c, map.getOrDefault(c, 0)+1); */
+        }
+        for(char ch : str2.toCharArray()){
+            if(!map.containsKey(ch)){
+                return false;
+            }
+            map.put(ch, map.get(ch)-1);
+            if(map.get(ch)<0){
+                return false;
+            }
         }
 
-        return false;
+        return true;
 
      }
 
