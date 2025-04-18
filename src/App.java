@@ -1,11 +1,22 @@
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.function.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 
 public class App {
     public static void main(String[] args) throws Exception {
+
+        System.out.println("---------------------------------");
+        String strArray[] = {"Sonali","Sonali", "RAm"};
+        FindDuplicateFromArray(strArray);
+
+
+
         /*
          *  write a program for find out empty directory from local disk
          *  write a program to convert - one thousand three hundred two to 1302 
@@ -18,9 +29,6 @@ int k = 3; // Find the 3rd smallest element
 Arrays.stream(array).filter(n-> n<k).count();
 
           */
-
-
-
           /*
            *  Longest substring without repeating character find length in given string
            * String input = "abcabcbb";
@@ -50,8 +58,7 @@ Arrays.stream(array).filter(n-> n<k).count();
 
 
            String s1 = "characters", s2 = "alphabets" ;
-            findUniqueElementFromBothString(s1, s2);
-
+            //findUniqueElementFromBothString(s1, s2);
 
     }
 
@@ -131,4 +138,23 @@ Explanation: Both strings contain the same characters, so there are no unique ch
          */
 
      }
+
+      /*
+       * String str[] = {"Sonali","soNali", "RAm"}; 
+       */
+
+      private static void FindDuplicateFromArray(String[] str){
+
+        List<String> listArray = Arrays.asList(str);
+        
+        Map<String, Long> duplicateMap = listArray.stream().
+        collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+        .entrySet().stream().filter(entry-> entry.getValue()> 1)
+        .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+        System.out.println(duplicateMap);
+      }
+
+
+//GIVEN A FILE CONTAINING STRING SORT THE STRING IN DICTIONARY ORDER
+
 }
