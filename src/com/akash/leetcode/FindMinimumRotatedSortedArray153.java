@@ -8,47 +8,60 @@ public class FindMinimumRotatedSortedArray153 {
         int [] arr = {3,4,5,1,2}; 
         int finalValue = minimumRotatedSortedArray(arr);
         System.out.println(finalValue);
+        int minValue = minimumRotatedSortedArrayWithMinimum(arr);
+        System.out.println(minValue);
     }
     /*
-     * The idea is to use binary search to find the minimum element in the rotated sorted array.
-     * We compare the middle element with the leftmost and rightmost elements to determine which half of the array is sorted.
-     * Based on this information, we can decide which half to search next.
+     * example - {4,5,7,0,1,2}
+     * here mid greater than right so we will move mid+1 so it will be left because this is the sorted array
+     * but right will mid
      */
     /*
      * Time Complexity: O(log n)
      * Space Complexity: O(1)
      */
-    /*
-     * The function takes an array of integers as input and returns the minimum element in the rotated sorted array.
-     * It initializes the left and right pointers to the start and end of the array, respectively.
-     * It then enters a while loop that continues until the left pointer is less than or equal to the right pointer.
-     * Inside the loop, it calculates the middle index and compares the middle element with the leftmost and rightmost elements.
-     * Depending on which half of the array is sorted, it updates the left or right pointer accordingly.
-     */
-    /*
-     * The function also keeps track of the minimum element found so far and updates it as necessary.
-     * Finally, it returns the minimum element found in the rotated sorted array.
-     */
-    /*
-     * The function is efficient and works well for large arrays, making it a good choice for finding the minimum element in a rotated sorted array.
-     */
     private static final int minimumRotatedSortedArray(int[] nums){
 
-        int n = nums.length;
-        int min = 5000 + 1;
-        int left = 0, right = n-1;
+        if(nums.length==1){
+            return nums[0];
+        }
         
-        while (left <= right) {
-            int mid = (left + right)/2;
-            if(nums[left] <= nums[mid]){
-                min = Math.min(min, nums[left]);
-                left = mid +1;
+        int left = 0; int right = nums.length-1;
+        while(left < right){
+            int mid = left + (right- left)/2;
+            if(nums[mid] >= nums[right]){
+                left = mid + 1;
             }else{
-                min = Math.min(min, nums[mid]);
-                right = mid -1;
+                right = mid;
             }
         }
-       return min;
+        return nums[left];
     }
+
+    /*
+     *  int length = 9;
+     *  int part1 = length / 2;
+     *  int part2 = length - part1; 
+    */
+
+    /*
+     * Time Complexity: O(n)
+     * Space Complexity: O(1)
+     */
+    private static int minimumRotatedSortedArrayWithMinimum(int[] nums){
+
+        int length = nums.length;
+        int minValue = nums[0];
+        //int halfLength = length/2;
+        for (int i = 0; i < length/2; i++) {
+            minValue = Math.min(minValue, nums[i]);
+        }
+        //int l = length - length/2;
+        for(int i = length/2; i<=length-length/2; i++){
+            minValue = Math.min(minValue, nums[i]);
+        }
+        return minValue;
+    }
+    
 
 }
