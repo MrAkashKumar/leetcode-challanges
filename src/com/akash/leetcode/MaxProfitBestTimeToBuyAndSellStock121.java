@@ -9,6 +9,8 @@ public class MaxProfitBestTimeToBuyAndSellStock121 {
         int[] prices = {7,1, 5, 3, 6, 4};
         int maxValue = maxProfit(prices);
         System.out.println(maxValue);
+        int maxProfitValue = maxStockProfit(prices);
+        System.out.println(maxProfitValue);
     }
     /*
      * 1. We need to find the maximum profit we can make by buying and selling a stock.
@@ -34,7 +36,18 @@ public class MaxProfitBestTimeToBuyAndSellStock121 {
                     op = pist;  /* update overall profit */ 
             }
         }
-        return op;
-            
+        return op;     
+    }
+
+    private static int maxStockProfit(int[] prices){
+
+        int maxTotalProfit = 0;
+        int previousStock = Integer.MAX_VALUE;
+        for(int price : prices){
+            previousStock = Math.min(previousStock, price);
+            maxTotalProfit = Math.max(maxTotalProfit, price-previousStock);
+        }
+
+        return maxTotalProfit;
     }
 }
