@@ -1,0 +1,71 @@
+What is a Stack?
+
+A Stack is a LIFO (Last In, First Out) data structure.
+
+Think of it like a stack of plates:
+
+You put a plate on top → push
+You remove the top plate → pop
+
+✨ Basic Operations:
+stack.push(x);   // Add element
+stack.pop();     // Remove top element
+stack.peek();    // Look at top element
+stack.isEmpty(); // Check if empty
+
+💡 Example Use Cases:
+
+Undo operations (Ctrl+Z)
+Backtracking (e.g. maze problems, DFS)
+Expression parsing (balanced parentheses, postfix evaluation)
+Function call stack (recursion)
+
+
+Stack vs Deque in Java
+Java's Stack class is old and synchronized, so in modern Java:
+
+✅ Use Deque (ArrayDeque) to implement a stack or queue more efficiently.
+
+🔄 To use Deque as Stack:
+Deque<Integer> stack = new ArrayDeque<>();
+stack.push(10);       // same as addFirst()
+stack.pop();          // same as removeFirst()
+stack.peek();         // same as peekFirst()
+
+
+What is a Deque?
+A Deque is a Double-Ended Queue — you can insert/remove elements from both ends.
+
+Java: Deque<Integer> deque = new ArrayDeque<>();
+✨ Key Methods:
+--------------------------------------------------------
+Operation   | Front           | Rear
+Add         | addFirst()      | addLast()
+Remove      | removeFirst()   | removeLast()
+Peek        | peekFirst()     | peekLast()
+--------------------------------------------------------
+
+
+🧠 When to Use Deque?
+Use Deque when:
+
+You need both stack and queue behavior
+You need to add/remove from both ends (sliding window, palindromes)
+You want better performance than Java’s legacy Stack or LinkedList
+
+
+📌 Common Problems Using Deque:
+
+Sliding Window Maximum (LeetCode 239)
+Palindrome checking
+Implementing Monotonic Stack/Queue
+Browser forward/back navigation
+
+
+
+
+
+
+
+
+
