@@ -1,0 +1,9 @@
+What is Queue?
+
+
+✅ Use Deque (ArrayDeque) to implement a stack or queue more efficiently.
+
+🔄 To use Deque as Queue:
+Deque<Integer> queue = new ArrayDeque<>();
+queue.addLast(10);     // add to rear
+queue.removeFirst();   // remove from front
