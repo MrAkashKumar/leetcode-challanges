@@ -1,0 +1,8 @@
+1. Write a program to print odd even using threads
+
+    How it works:
+        1. Shared number starts at 1.
+        2. Two threads (oddThread and evenThread) print odd and even numbers respectively.
+        3. They take turns using wait() and notify() on a shared lock.
+        4. It runs until the number reaches MAX.
+        5. Want a version using ReentrantLock, Condition, or semaphores instead?
