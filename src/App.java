@@ -12,6 +12,9 @@ public class App {
          *  2. write a program to convert - one thousand three hundred two to 1302 
          *  3. Algomaster Io question will solve
          /*
+
+         https://leetcode.com/problems/squares-of-a-sorted-array/description/
+         
         /*
             Find the kth smallest element in an array using Java streams:
             int[] array = {4, 2, 7, 1, 5, 3, 6};
