@@ -7,6 +7,17 @@ public class App {
     
     public static void main(String[] args) throws Exception {
 
+        someMethod(null);
+
+    /*
+    String s1 = new String("Bangalore");
+	String s2 = new String("Bangalore");
+
+	s1.replace("Bangalore","Hyderabad");
+	System.out.println(s1==s2); //false 
+	System.out.println(s1.equals(s2)); //true
+    */
+
         /*
          *  1. write a program for find out empty directory from local disk
          *  2. write a program to convert - one thousand three hundred two to 1302 
@@ -67,6 +78,13 @@ public class App {
 
     /* GIVEN A FILE CONTAINING STRING SORT THE STRING IN DICTIONARY ORDER */
 
+    public static void someMethod(Object o) {
+        System.out.println("Object method Invoked");
+       }
+
+       public static void someMethod(String s) {
+        System.out.println("String method Invoked");
+       }
     
 
 }

@@ -4,10 +4,7 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
-
-
-        
+    public static void main(String[] args) {        
 
         
     }
@@ -74,27 +71,14 @@ public class Main {
      * 
      */
 
+    private static void secondHightSal(){
 
-
-
-
-        
-
-        private static void secondHightSal(){
-
-            List<Long>  list = new ArrayList<>();
+        List<Long>  list = new ArrayList<>();
             
-            Long salr= list.stream().distinct().sorted(Comparator.reverseOrder()).skip(1).findAny().get();
+        Long salr= list.stream().distinct().sorted(Comparator.reverseOrder()).skip(1).findAny().get();
 
 
-        }
-
-
-
-
-
-
-
+    }
 
     
 }
