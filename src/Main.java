@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {        
 
-        
+        secondHightSal();
     }
 
 
@@ -77,6 +77,7 @@ public class Main {
             
         Long salr= list.stream().distinct().sorted(Comparator.reverseOrder()).skip(1).findAny().get();
 
+        System.out.println( salr);
 
     }
 
