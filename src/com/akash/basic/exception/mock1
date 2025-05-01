@@ -1,0 +1,13 @@
+public class Test {
+	public static void main(String[] args) {
+		try {
+			String value = null;
+			int number = Integer.parseInt(value);
+			System.out.println("Number: " + number);
+		} catch (Exception e) {
+			System.out.println("Exception occurred.");
+		} catch (NullPointerException e) {
+			System.out.println("NullPointerException occurred."); // 
+		}
+	}
+}

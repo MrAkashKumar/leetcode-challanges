@@ -1,0 +1,25 @@
+class Person{
+
+    public void display() throws IOException{
+        System.out.println("Person.Display() called");
+    }
+}
+
+class Child extends Person{
+
+    public void display() throws Exception{
+        System.out.println("Child.Display() called");
+    }
+}
+
+class Main{
+
+    public static void main(String[] args){
+        Child obj3 = new Person();
+        obj3.display(); // error
+
+		Person p = new Child();
+		p. display(); // child.Display() called}
+    }
+
+}
