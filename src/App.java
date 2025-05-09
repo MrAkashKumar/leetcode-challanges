@@ -1,6 +1,4 @@
 import java.util.Set;
-import java.util.function.*;
-import java.util.Arrays;
 import java.util.HashSet;
 
 public class App {

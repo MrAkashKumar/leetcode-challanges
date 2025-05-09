@@ -3,11 +3,7 @@ package com.akash.basic.stream;
 import java.util.Arrays;
 import java.util.List;
 import java.util.TreeMap;
-import java.util.function.Function;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
-
-import com.akash.basic.stream.Runner.Employee;
 
 public class Runner2 {
 
