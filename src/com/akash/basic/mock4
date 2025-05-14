@@ -1,0 +1,29 @@
+class ConcateAndSum{
+
+    int add(int a, int b){
+        return a + b;
+    }
+
+    String add(int a, int b, String c){
+        return a+b+c;
+    }
+
+    int add(String a, int b){
+        return a+b;
+    }
+
+}
+
+class MainApp{
+
+    main{
+        ConcateAndSum concat = new ConcateAndSum();
+        System.out.println(concat.add(10, 20));
+        System.out.println(concat.add(10, 20, "30"));
+        System.out.println(concat.add("10", 20));
+
+
+
+    }
+
+}
