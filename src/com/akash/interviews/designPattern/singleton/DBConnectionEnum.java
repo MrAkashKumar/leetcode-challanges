@@ -1,4 +1,4 @@
-package com.akash.interviews.singleton;
+package com.akash.interviews.designPattern.singleton;
 /* singleton enum example
  * 
  * This is a singleton class that uses an enum to ensure that only one instance of the class is created.

@@ -1,4 +1,4 @@
-package com.akash.basic.stream;
+package com.akash.basic.java8stream;
 
 import java.util.stream.IntStream;
 

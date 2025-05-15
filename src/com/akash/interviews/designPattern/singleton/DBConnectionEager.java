@@ -1,4 +1,4 @@
-package com.akash.interviews.singleton;
+package com.akash.interviews.designPattern.singleton;
 /*
  * Singleton class
  * Eager Initialization

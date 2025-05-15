@@ -1,4 +1,4 @@
-package com.akash.interviews.singleton;
+package com.akash.interviews.designPattern.singleton;
 /* Bill Pugh Singleton Design Pattern
  * This is a thread-safe singleton implementation using a static inner helper class.
  * The instance of the singleton is created only when it is needed, which is efficient in terms of memory usage.

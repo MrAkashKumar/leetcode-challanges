@@ -1,4 +1,4 @@
-package com.akash.interviews.singleton;
+package com.akash.interviews.designPattern.singleton;
 
 public class Main {
     
