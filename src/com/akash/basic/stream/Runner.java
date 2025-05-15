@@ -54,11 +54,14 @@ public class Runner {
         List<Employee> employeeList = Arrays.asList(new Employee("Akash", "IT", 2000.0), 
         new Employee("Prakash", "MECH", 200.0), // Mech - list of employee object
         new Employee("Abhinav", "CSE", 4000.0),
-        new Employee("Vicky", "CSE", 5000.0)
-        );
+        new Employee("Vicky", "CSE", 5000.0));
 
+        findByDeptWiseEmployeeListSortedDescSal(employeeList);
+    }
 
-        Map<String, List<Employee>> employeeMap = employeeList.stream() 
+    private static void findByDeptWiseEmployeeListSortedDescSal(List<Employee> employeeList){
+
+         Map<String, List<Employee>> employeeMap = employeeList.stream() 
             .collect(Collectors.groupingBy(Employee::getDepartment,
             Collectors.collectingAndThen(Collectors.toList(), list -> list.stream()
             .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
@@ -68,7 +71,8 @@ public class Runner {
                 System.out.println(dept + ":");
                 emps.forEach(e -> System.out.println("  " + e));
             });
-        
+
+            System.out.println(employeeMap);
 
     }
     

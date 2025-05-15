@@ -15,6 +15,7 @@ public class Runner1{
     }
 
     public boolean equals(Object o) {
+        System.out.println("Equal");
         if (this == o) 
         return true;
         if (o instanceof MockApp) {
@@ -25,8 +26,16 @@ public class Runner1{
     }
 
     public int hashCode() {
+        System.out.println("Hascode");
         return 1;
     }
+
+    @Override
+    public String toString() {
+        return "MockApp [x=" + x + ", y=" + y + "]";
+    }
+
+    
 }
 
     public static void main(String[] args) {
@@ -34,6 +43,7 @@ public class Runner1{
         map.put(new MockApp(1, 2), "A");
         map.put(new MockApp(1, 2), "B"); // B
         System.out.println(map.size()); // 1
+        System.out.println(map.get(new MockApp(1, 2)));
         System.out.println(map.entrySet());
     }
     

@@ -9,7 +9,7 @@ public class Runner2 {
     }
 
     public static void print(Integer value) {
-        System.out.println("Integer object method called with value: " + value);
+        System.out.println("Non-Primitive Integer object method called with value: " + value);
     }
 
     public static void print(Object value){
@@ -17,6 +17,8 @@ public class Runner2 {
     }
 
     public static void main(String[] args) {
+
+        System.out.println("---------------------------");
         
         /* Calling with primitive int */ 
         print(10); /* Output: Primitive int method called with value: 10 */ 

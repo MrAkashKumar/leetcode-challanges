@@ -34,6 +34,7 @@ public class Runner2{
         Map<Employee, String> map = new HashMap<>();
         Employee e1 = new Employee("Amit");
         Employee e2 = new Employee("Amit");
+        System.out.println("--------------------");
 
         map.put(e1, "Developer");
         map.put(e2, "Manager"); // store 

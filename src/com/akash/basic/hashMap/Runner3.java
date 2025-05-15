@@ -22,9 +22,12 @@ public class Runner3{
 
     public static void main(String[] args) {
         Map<MyKey, String> map = new HashMap<>();
+        System.out.println("----------------");
         map.put(new MyKey(1), "One");
-        map.put(new MyKey(2), "Two");
+        map.put(new MyKey(2), "Two"); //Two
         System.out.println(map.size()); // 1
+        System.out.println(map.get(new MyKey(1)));
+        System.out.println(map.get(new MyKey(2)));
     }
     
 }

@@ -39,9 +39,15 @@ public class Runner2 {
 
     public static void main(String[] args) {
         
-        List<Product> productsList = Arrays.asList(new Product("laptop", 100), new Product("mobile", 200),
+        List<Product> productsList = Arrays.asList(new Product("laptop", 100), 
+        new Product("mobile", 200),
         new Product("mobile", 50)
         );
+        
+        findProductIfSamePriceThenSumAndReturnNewMap(productsList);
+    }
+
+    private static void findProductIfSamePriceThenSumAndReturnNewMap(List<Product> productsList){
 
         TreeMap<String, Double> treeMap = productsList.stream().collect(Collectors.toMap(Product::getName, Product::getPrice, Double::sum, TreeMap::new));
         System.out.println(treeMap);

@@ -1,14 +1,14 @@
-package com.akash.interviews;
+package com.akash.leetcode;
 /*
  * https://leetcode.com/problems/design-circular-queue/
  */
-public class MyDesignCircularQueue {
+public class MyDesignCircularQueue622 {
 
     private int rear;
     private int capacity;
     private int size;
 
-    public MyDesignCircularQueue(int k) {
+    public MyDesignCircularQueue622(int k) {
         this.capacity = 0;
         rear = -1;
         size = 0;

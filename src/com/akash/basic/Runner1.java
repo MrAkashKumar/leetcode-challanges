@@ -13,6 +13,7 @@ public class Runner1 {
     static class C extends B{
      
     }
+
     static void overloadedMethod(A a){
         System.out.println("ONE");
     }
@@ -25,11 +26,15 @@ public class Runner1 {
         System.out.println("THREE");
     }
    
-
     public static void main(String[] args){
         C c = new C();
         overloadedMethod(c);
-    }
+        A a = new C();
+        overloadedMethod(a);
+        B b = new B();
+        overloadedMethod(b);
+        
 
+    }
     
 }

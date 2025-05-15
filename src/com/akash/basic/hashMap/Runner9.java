@@ -9,8 +9,11 @@ public class Runner9 {
         HashMap<Person, String> map = new HashMap<>();
         map.put(new Person("Akash"), "Kumar");
         map.put(new Person("Akash"), "Kum");
+         map.put(new Person("Ravi"), "Kum");
 
-        System.out.println(map.size());
+        System.out.println("-----------------");
+        System.out.println(map.size()); // 2
+        System.out.println(map.get(new Person("Akash"))); //null
 
     }
 

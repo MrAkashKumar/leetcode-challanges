@@ -30,6 +30,7 @@ public class Runner5{
     
     public static void main(String[] args) {
         Map<MyKey, String> map = new HashMap<>();
+        System.out.println("----------------");
         for (int i = 0; i < 6; i++) {
             map.put(new MyKey(i), "val" + i);
         }

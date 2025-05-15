@@ -16,7 +16,10 @@ public class Runner4{
     
         public int hashCode() {
             System.out.println("has code method");
-            return id % 5;
+             int value = id % 5; // 10 % 5 = 
+             System.out.println(value);
+             return value;
+
         }
     }
     

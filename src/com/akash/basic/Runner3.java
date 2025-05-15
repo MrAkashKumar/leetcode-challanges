@@ -5,6 +5,7 @@ public class Runner3 {
     public static void main(String[] args) {
         
         new Y().method(100);
+        new Y().method(100.00);
     }
 
     static class X{
