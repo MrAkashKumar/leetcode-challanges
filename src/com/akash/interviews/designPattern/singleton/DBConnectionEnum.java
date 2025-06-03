@@ -8,19 +8,16 @@ package com.akash.interviews.designPattern.singleton;
  * This approach is thread-safe and prevents multiple instances from being created.
  */
 public enum DBConnectionEnum {
-    /* solve by only one JVM instance
-     * 
+    /* 
+     * solve by only one JVM instance
      * The enum is loaded only once, so the instance is created only once.
      * This ensures that only one instance of the class is created, even in a multi-threaded environment.
      */
     INSTANCE;
-
     /* Add any instance variables or methods here */ 
     private String connectionString;
 
     public String getConnectionString() {
         return connectionString;
     }
-    
-
 }

@@ -10,9 +10,11 @@ public class Runner0 {
 
     public static void solution1(){
         byte x = 127;
+            System.out.println("Before: "+ x);
             x++;
+            System.out.println("After 1 increment: "+ x);
             x++;
-        System.out.println(x);
+        System.out.println("After two increment: "+x);
         System.out.println("----------------");
     }
     

@@ -8,7 +8,6 @@ public class DBConnectionDoubleChecking {
     private DBConnectionDoubleChecking() {
         /* Initialize connection resources here */ 
     }
-
     /* Static method to get the singleton instance */
     /* Double-checked locking to ensure thread safety */
     /* memory issues can occur if the instance is not declared volatile */
