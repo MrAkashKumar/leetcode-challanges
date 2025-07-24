@@ -1,8 +1,10 @@
 package com.akash.practice;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -30,6 +32,8 @@ public class Java8Questions {
          /*use entryset with each loop to find getKey and getValue */
         System.out.println(deptEmployeeList);
 
+        String str5 = "Akash Kumar";
+        findCountVowelConstant(str5);
 
                             
 
@@ -47,6 +51,21 @@ public class Java8Questions {
         return employeesList.stream().collect(Collectors.groupingBy(Employee::getDept));
     }
 
+    private static void findCountVowelConstant(String str) {
+       // List<Character> vowelsList =
+        Set<Character> vowles = new HashSet<>(Arrays.asList('a', 'e', 'i','o','u', 'A', 'E', 'I', 'O', 'U'));
+
+        long vowelsCount = str.chars().mapToObj(c-> (char) c).filter(vowles::contains).count();
+
+        long constantCount = str.chars().mapToObj(c-> (char)c).filter(
+                ch -> Character.isLetter(ch) && !vowles.contains(ch)
+        ).count();
+
+        System.out.println("VowelCount :"+ vowelsCount);
+        System.out.println("ConstantCount: "+ constantCount);
+
+
+    }
     
 
 }
