@@ -14,5 +14,10 @@ public class Client {
         DBConnection dbConnection6 = poolManager.getDbConnection();
         poolManager.getDbConnection();
         poolManager.releaseDBConnection(dbConnection6);
+        poolManager.releaseDBConnection(dbConnection5);
+        poolManager.releaseDBConnection(dbConnection4);
+        poolManager.releaseDBConnection(dbConnection3);
+        poolManager.releaseDBConnection(dbConnection2);
+        poolManager.releaseDBConnection(dbConnection1);
     }
 }
