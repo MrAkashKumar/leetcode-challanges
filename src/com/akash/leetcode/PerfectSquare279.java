@@ -11,7 +11,8 @@ import java.util.Queue;
  * 🧠 Key Idea Behind the Problem
     This is a minimum partition optimization problem.
     You want to express n as the sum of perfect squares such that the number of terms used is minimized.
-    | Approach             | Time Complexity | Space | Comments                           |
+    
+| Approach             | Time Complexity | Space | Comments                           |
 | -------------------- | --------------- | ----- | ---------------------------------- |
 | Brute Force          | O(???)          | High  | Very expensive — not viable        |
 | DP (Bottom Up)       | O(n√n)          | O(n)  | Best for interviews                |
@@ -42,7 +43,9 @@ public class PerfectSquare279 {
        int perfectSquareNumber =  numSquares(input);
        System.out.println(" Min squares for " + input + " =  " + perfectSquareNumber);
 
+       System.out.println(" Min squares for " + input + " =  " + numSquaresBFS(input));
 
+       System.out.println(" Min squares for " + input + " =  " + numSquaresMath(input));
     }
 
     /*
