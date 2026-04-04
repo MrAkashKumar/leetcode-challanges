@@ -26,7 +26,7 @@ public class validPerfectSquare367 {
         boolean isValid = isPerfectSquare(input);
         System.out.println("Binary Search  " + isValid);
 
-        System.out.println("Newton’s Method  "+ isPerfectSquareNewtonMethod(input));
+        System.out.println("Newton s Method  "+ isPerfectSquareNewtonMethod(input));
 
         System.out.println("Brute Force "+ isPerfectSquareBruteForce(input));
 
@@ -56,9 +56,9 @@ public class validPerfectSquare367 {
         ➡ O(log n) time
         ➡ O(1) space
 
-
+        Time complexity - O(log n)
+        Space complexity - O(1)
     */
-
     public static boolean isPerfectSquare(int num) {
         if (num < 1) return false;
 
@@ -72,7 +72,6 @@ public class validPerfectSquare367 {
             else if (sq < num) left = mid + 1;
             else right = mid - 1;
         }
-
         return false;
     }
 
@@ -139,7 +138,6 @@ public class validPerfectSquare367 {
         return num == 0;
     }
 
-
     /**
      * 
      * 🧠 How to Think Step-by-Step (Interview Process)
@@ -160,5 +158,6 @@ public class validPerfectSquare367 {
      * 
      */
 
+     /* ====================================END =============================================== */   
     
 }
