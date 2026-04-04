@@ -6,9 +6,6 @@ import java.util.TreeMap;
 
 /*
     https://leetcode.com/problems/random-pick-with-weight
-    ✔ Best Interview Approach — Prefix Sum + Binary Search
-        This is the most optimal and the expected solution in interviews.
-
 🧠 Key Idea Behind the Question (Very Important)
     This is a classic Prefix Sum + Binary Search problem.
     Transform weight array into cumulative sums:
