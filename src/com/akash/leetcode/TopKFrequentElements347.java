@@ -135,6 +135,7 @@ public class TopKFrequentElements347 {
         for (int num : nums) freq.put(num, freq.getOrDefault(num, 0) + 1);
 
         /* Bucket array: index = frequency */ 
+        @SuppressWarnings("unchecked")
         List<Integer>[] bucket = new List[nums.length + 1];
 
         for (int key : freq.keySet()) {
