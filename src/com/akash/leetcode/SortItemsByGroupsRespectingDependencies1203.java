@@ -1,6 +1,7 @@
 package com.akash.leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.Queue;
 
 /**
  * https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/description/
+ * 
  * 
  * You are given:
     ✔ n items (0 to n-1)
@@ -71,10 +73,26 @@ public class SortItemsByGroupsRespectingDependencies1203 {
         Output- [6,1,5,2,3,4,0,7]
 
      */
-    int n = 8, m =2;
-    int groups[] = {-1,-1,1,0,0,1,0,-1};
-    
-        
+
+    /*
+        Input: n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3],[],[4],[]]
+        Output: []
+        Explanation: This is the same as example 1 except that 4 needs to be before 6 in the sorted list.
+    */
+        int n = 8, m =2;
+        int groups[] = {-1,-1,1,0,0,1,0,-1};
+        List<List<Integer>> beforeItems = new ArrayList<>();
+        beforeItems.add(new ArrayList<>()); // 0
+        beforeItems.add(Arrays.asList(6));  // 1
+        beforeItems.add(Arrays.asList(5));  // 2
+        beforeItems.add(Arrays.asList(6));  // 3
+        beforeItems.add(Arrays.asList(3, 6)); // 4
+        beforeItems.add(new ArrayList<>()); // 5
+        beforeItems.add(new ArrayList<>()); // 6
+        beforeItems.add(new ArrayList<>()); // 7
+
+        int[] response = sortItems(n, m, groups, beforeItems);
+        System.out.println(" response: "+ response);
     }
 
     /**
