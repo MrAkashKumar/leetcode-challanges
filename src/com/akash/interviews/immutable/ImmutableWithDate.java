@@ -2,7 +2,7 @@ package com.akash.interviews.immutable;
 
 import java.util.Date;
 
-public class ImmutableWithDate {
+public final class ImmutableWithDate {
 
     private final String title;
     private final Date launchDate; /* mutable field */

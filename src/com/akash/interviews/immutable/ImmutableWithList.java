@@ -6,7 +6,7 @@ import java.util.List;
 /*
  * immutable with list
  */
-public class ImmutableWithList {
+public final class ImmutableWithList {
 
     private final String title;
     private final List<String> students;

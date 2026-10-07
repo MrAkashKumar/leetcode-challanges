@@ -3,7 +3,6 @@ class MyKey {
     MyKey(int val) { this.val = val; }
 
     public int hashCode() {
-        
         return val % 3;
     }
 
